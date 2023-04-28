@@ -1,3 +1,7 @@
+## Forked from [Gamma-Software](https://github.com/Gamma-Software/netdata-homeassistant-addon)
+## It appears that Gamma-Software(Valentine Rudloff) no longer maintains his Repository  
+## I will TRY to keep this updated as long as my free time allows
+
 <p align="center"><a href="https://netdata.cloud"><img src="https://user-images.githubusercontent.com/1153921/95268672-a3665100-07ec-11eb-8078-db619486d6ad.png" alt="Netdata" width="300" /></a></p>
 
 <h3 align="center">Netdata is high-fidelity infrastructure monitoring and troubleshooting.<br />Open-source, free, preconfigured, opinionated, and always real-time.</h3>
@@ -36,7 +40,7 @@ The Netdata Addon is not available in the Home Assistant default Addon. To insta
 3. Click on the *add-on store* lower-right button
 4. Click on the 3 dots icon on the top-right corner
 5. Click on *Repositories*
-6. Add this repository: https://github.com/Gamma-Software/netdata-homeassistant-addon
+6. Add this repository: https://github.com/cryorig/netdata-homeassistant-addon
 7. Search for the "Netdata" add-on
 8. Start the "Netdata" add-on
 9. Check the logs of the "Netdata" add-on to see if everything went well
@@ -45,40 +49,35 @@ The Netdata Addon is not available in the Home Assistant default Addon. To insta
 
 ## Support
 
-Got questions?
-
-No discord or forum is created for now, so contact me by mail
-[:mailbox_with_mail: Contact us][contact]
-
-You could also [open an issue here][issue] GitHub.
+Got questions or Problems?  
+[Open a new issue][issue]
 
 ## Contributing
 
-This is an active open-source project. We are always open to people who want to
-use the code or contribute to it.
+This is an active open-source project. We are always open to people who want to use the code or contribute to it.
 
-We have set up a separate document containing our
-[contribution guidelines](.github/CONTRIBUTING.md).
+TODO: We have set up a separate document containing our [contribution guidelines](.github/CONTRIBUTING.md)  
+In the mean time: [Open a new issue if you have Questions.][issue]
 
 Thank you for being involved! :heart_eyes:
 
 ## Compatible and tested platforms
 
-This addon is tested on the following platforms:
+This addon is tested on the following platforms: (State from 27042023 Gamma-Software Repository)
 
 * Raspberry Pi 4
 * MacBook Pro 13' 2011
 * Asus Zenbook 14'
 
-If you tested it on your own system and it works for you, please contact me by mail so I can add it to the tested list.
-[:mailbox_with_mail: Contact us][contact]
+If you tested it on your own system and it works for you, please [Open a new issue here][issue] so I can add it to the tested list.
 
 ## Authors & contributors
 
 The original setup of this repository is by [Valentin Rudloff][valentin].
+Current Maintainer of this Fork: [CryoRig]
 
 For a full list of all authors and contributors,
-check [the contributor's page][contributors].
+check [the original contributor's page][contributors_gamma] as well as [the contributor's page of this Fork][contributors_cryorig].
 
 ## License
 
@@ -104,9 +103,11 @@ SOFTWARE.
 
 
 [valentin]: https://github.com/Gamma-Software
-[contributors]: https://github.com/Gamma-Software/netdata-homeassistant-addon/graphs/contributors
-[issue]: https://github.com/Gamma-Software/netdata-homeassistant-addon/issues
-[contact]: valentin.rudloff.perso@gmail.com
+[cryorig]: https://github.com/cryorig
+[contributors_gamma]: https://github.com/Gamma-Software/netdata-homeassistant-addon/graphs/contributors
+[contributors_cryorig]: https://github.com/cryorig/netdata-homeassistant-addon/graphs/contributors
+[issue]: https://github.com/cryorig/netdata-homeassistant-addon/issues
+[contact]: cryorig@gmx.at
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
@@ -114,4 +115,4 @@ SOFTWARE.
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
-[ci]: https://github.com/Gamma-Software/netdata-homeassistant-addon/actions/workflows/builder.yaml/badge.svg
+[ci]: https://github.com/cryorig/netdata-homeassistant-addon/actions/workflows/builder.yaml/badge.svg

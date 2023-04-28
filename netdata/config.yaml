@@ -3,7 +3,7 @@ name: Netdata
 version: "2.1.1"
 slug: netdata
 description: Netdata - Monitor everything in real time
-url: "https://github.com/Gamma-Software/netdata-homeassistant-addon"
+url: "https://github.com/cryorig/netdata-homeassistant-addon"
 arch:
   - armhf
   - armv7
@@ -38,4 +38,4 @@ schema:
   claim_token: str
   claim_rooms:
     - str
-image: "ghcr.io/gamma-software/{arch}-netdata-homeassistant-addon"
+image: "ghcr.io/cryorig/{arch}-netdata-homeassistant-addon"
