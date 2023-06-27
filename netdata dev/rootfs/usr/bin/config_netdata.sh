@@ -36,3 +36,9 @@ then
     sed -i "s/${TAB}# error log = .*/${TAB}error log = none/" /etc/netdata/netdata.conf
     sed -i "s/${TAB}# access log = .*/${TAB}access log = none/" /etc/netdata/netdata.conf
 fi
+
+NETDATA_CONFIG_PATH=$(bashio::config 'data_path')
+bashio::log.info "Netdata configuration: set config path to ${NETDATA_CONFIG_PATH}/config"
+sed -i "s/${TAB}# config directory = .*/${TAB}config directory = ${NETDATA_CONFIG_PATH}/config/" /etc/netdata/netdata.conf
+bashio::log.info "Netdata configuration: set lib path to ${NETDATA_CONFIG_PATH}/config"
+sed -i "s/${TAB}# lib directory = .*/${TAB}lib directory = ${NETDATA_CONFIG_PATH}/lib/" /etc/netdata/netdata.conf

@@ -20,7 +20,6 @@ privileged:
   - SYS_PTRACE
 map:
   - config:rw
-  - share:rw
 options:
   hostname: homeassistant
   data_path: /config/netdata
@@ -29,9 +28,9 @@ options:
   enable_alarm: true
   enable_log: true
   claim_url: https://app.netdata.cloud
-  claim_token: xxxxxxxxxxxxxxxxxxxxxxx
+  claim_token: YOUR_CLAIM_TOKEN
   claim_rooms:
-    - ROOM
+    - REPLACE_WITH_ROOM
 schema:
   hostname: str
   page_cache_size: int
