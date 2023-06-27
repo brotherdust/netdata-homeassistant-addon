@@ -37,6 +37,7 @@ schema:
   dbengine_disk_space: int
   enable_alarm: bool
   enable_log: bool
+  data_path: str
   claim_url: str
   claim_token: str
   claim_rooms:

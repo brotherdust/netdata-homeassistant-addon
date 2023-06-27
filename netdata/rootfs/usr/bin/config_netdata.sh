@@ -40,5 +40,5 @@ fi
 NETDATA_CONFIG_PATH=$(bashio::config 'data_path')
 bashio::log.info "Netdata configuration: set config path to ${NETDATA_CONFIG_PATH}/config"
 sed -i "s/${TAB}# config directory = .*/${TAB}config directory = ${NETDATA_CONFIG_PATH}/config/" /etc/netdata/netdata.conf
-bashio::log.info "Netdata configuration: set lib path to ${NETDATA_CONFIG_PATH}/config"
+bashio::log.info "Netdata configuration: set lib path to ${NETDATA_CONFIG_PATH}/lib"
 sed -i "s/${TAB}# lib directory = .*/${TAB}lib directory = ${NETDATA_CONFIG_PATH}/lib/" /etc/netdata/netdata.conf
