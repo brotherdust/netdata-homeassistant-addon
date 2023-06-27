@@ -22,8 +22,6 @@ map:
   - config:rw
 options:
   hostname: homeassistant
-  config_path: /config/netdata/config
-  lib_path: /config/netdata/lib
   page_cache_size: 32
   dbengine_disk_space: 256
   enable_alarm: true
@@ -38,7 +36,6 @@ schema:
   dbengine_disk_space: int
   enable_alarm: bool
   enable_log: bool
-  data_path: str
   claim_url: str
   claim_token: str
   claim_rooms:
