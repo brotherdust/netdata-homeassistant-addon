@@ -1,4 +1,8 @@
 #!/usr/bin/with-contenv bashio
+
+ls -la /
+ls -la /mnt
+
 bashio::log.info "Configuring Netdata..."
 /usr/bin/config_netdata.sh
 
