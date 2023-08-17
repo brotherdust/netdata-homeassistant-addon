@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.5-BETA] - 2023-07-20
+
+- Remove NETDATA_CONFIG_PATH as it's currently not working as intended
+- Claim via UI does NOT work as we have no easy way to display the random key
+- Update [Netdata 1.42.1](https://github.com/netdata/netdata/releases/tag/v1.42.1)
+
 ## [2.2.4] - 2023-07-20
 
 - Update [Netdata 1.41.0](https://github.com/netdata/netdata/releases/tag/v1.41.0)

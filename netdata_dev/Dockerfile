@@ -11,7 +11,7 @@ RUN apk update &&\
 # Execute during the build of the image
 RUN curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && \
     sh /tmp/netdata-kickstart.sh --no-updates --stable-channel \
-    --disable-telemetry --dont-start-it --non-interactive --install-version 1.41.0
+    --disable-telemetry --dont-start-it --non-interactive --install-version 1.42.1
 
 # Copy data for add-on
 COPY rootfs /
