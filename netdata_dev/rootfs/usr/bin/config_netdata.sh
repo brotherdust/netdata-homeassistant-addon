@@ -31,7 +31,7 @@ fi
 NETDATA_ENABLE_LOG=$(bashio::config 'enable_log')
 if [[ ${NETDATA_ENABLE_LOG} == "false" ]]
 then
-    bashio::log.info "Netdata configuration: logging is ${NETDATA_DISABLE_LOG}"
+    bashio::log.info "Netdata configuration: logging is DISABLED (${NETDATA_DISABLE_LOG})"
     sed -i "s/${TAB}# debug log = .*/${TAB}debug log = none/" /etc/netdata/netdata.conf
     sed -i "s/${TAB}# error log = .*/${TAB}error log = none/" /etc/netdata/netdata.conf
     sed -i "s/${TAB}# access log = .*/${TAB}access log = none/" /etc/netdata/netdata.conf
