@@ -7,6 +7,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.6] - 2023-09-06
+
+- Update [Netdata 1.42.2](https://github.com/netdata/netdata/releases/tag/v1.42.2)
+
 ## [2.2.5-BETA] - 2023-07-20
 
 - Remove NETDATA_CONFIG_PATH as it's currently not working as intended
