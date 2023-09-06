@@ -7,7 +7,7 @@ then
 else
     bashio::log.info "No Netdata Config found. Creating from default..."
     /opt/netdata/bin/netdata -d -p 19999 & sleep 2
-    mkdir -p /config/netdata/{config,lib}
+    mkdir -p /config/netdata/{config,lib,cache}
     curl -so /config/netdata/config/netdata.conf http://localhost:19999/netdata.conf
     pkill -9 netdata
 fi
@@ -44,6 +44,13 @@ then
 fi
 
 bashio::log.info "Netdata configuration: set config path to /config/netdata/config"
-sed -i "s+${TAB}# config directory = .*+${TAB}config directory = /config/netdata/config+" /config/netdata/config/netdata.conf
+sed -i "s+${TAB}# config directory = .*+${TAB}config directory = /config/netdata/config #DO NOT EDIT+" /config/netdata/config/netdata.conf
+
 bashio::log.info "Netdata configuration: set lib path to /config/netdata/lib"
-sed -i "s+${TAB}# lib directory = .*+${TAB}lib directory = /config/netdata/lib+" /config/netdata/config/netdata.conf
+sed -i "s+${TAB}# lib directory = .*+${TAB}lib directory = /config/netdata/lib #DO NOT EDIT+" /config/netdata/config/netdata.conf
+
+bashio::log.info "Netdata configuration: set cache path to /config/netdata/cache"
+sed -i "s+${TAB}# cache directory = .*+${TAB}cache directory = /config/netdata/cache #DO NOT EDIT+" /config/netdata/config/netdata.conf
+
+bashio::log.info "Netdata configuration: set home path to /config/netdata/cache"
+sed -i "s+${TAB}# home directory = .*+${TAB}home directory = /config/netdata/cache #DO NOT EDIT+" /config/netdata/config/netdata.conf
