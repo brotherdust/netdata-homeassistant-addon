@@ -5,8 +5,7 @@ LABEL maintainer="cryorig@gmx.at"
 EXPOSE 19999
 
 # Install openssl to claim node
-RUN apk update &&\
-    apk add openssl
+RUN apk add --no-cache openssl
 
 # Execute during the build of the image
 RUN curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && \
