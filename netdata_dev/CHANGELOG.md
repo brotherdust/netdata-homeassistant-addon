@@ -1,11 +1,12 @@
-<!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
+# DEV Version
+If you don't know what the difference to the non-DEV version is, don't use this...
 
 # Changelog
-
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [2.2.7] - 2023-09-12
+
+- Update [Netdata 1.42.3](https://github.com/netdata/netdata/releases/tag/v1.42.3)
 
 ## [2.2.6] - 2023-09-06
 
@@ -77,3 +78,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Netdata icon
 - Readme
 - Documentation
+
+
+The format of this file is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
