@@ -96,10 +96,10 @@ SOFTWARE.
 [issue]: https://github.com/cryorig/netdata-homeassistant-addon/issues
 [contact]: cryorig@gmx.at
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
-[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-broken-red.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[i386-shield]: https://img.shields.io/badge/i386-broken-red.svg
 [ci]: https://github.com/cryorig/netdata-homeassistant-addon/actions/workflows/builder.yaml/badge.svg
-[netdata installation]: https://github.com/Gamma-Software/netdata-homeassistant-addon/blob/main/image/installation.gif?raw=true
-[netdata screenshot]: https://github.com/Gamma-Software/netdata-homeassistant-addon/blob/main/image/screenshot.png?raw=true
+[netdata installation]: https://github.com/CryoRig/netdata-homeassistant-addon/blob/main/image/installation.gif?raw=true
+[netdata screenshot]: https://github.com/CryoRig/netdata-homeassistant-addon/blob/main/image/screenshot.png?raw=true
