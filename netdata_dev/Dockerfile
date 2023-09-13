@@ -5,7 +5,7 @@ LABEL maintainer="cryorig@gmx.at"
 EXPOSE 19999
 
 # Install openssl to claim node
-RUN apk add --no-cache openssl
+RUN apk add --no-cache openssl && \
 
 # add https://github.com/bitnami/ini-file for config edits
 curl -sL https://github.com/bitnami/ini-file/releases/download/v1.4.5/ini-file-linux-amd64.tar.gz | tar -xz && mv ini-file-linux-amd64 /usr/local/bin/ini-file
