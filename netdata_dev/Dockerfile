@@ -8,7 +8,7 @@ EXPOSE 19999
 RUN apk add --no-cache openssl && \
 
 # add https://github.com/bitnami/ini-file for config edits
-curl -sL https://github.com/bitnami/ini-file/releases/download/v1.4.5/ini-file-linux-amd64.tar.gz | tar -xz && mv ini-file-linux-amd64 /usr/local/bin/ini-file
+curl -sL https://github.com/bitnami/ini-file/releases/download/v1.4.5/ini-file-linux-arm64.tar.gz | tar -xz && mv ini-file-linux-amd64 /usr/local/bin/ini-file
 
 # Execute during the build of the image
 RUN curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && \
