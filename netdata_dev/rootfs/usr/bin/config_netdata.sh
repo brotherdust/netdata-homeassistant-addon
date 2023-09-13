@@ -8,20 +8,20 @@ then
     bashio::log.info "Using existing Netdata Config in $configpath."
 else
     bashio::log.info "No Netdata Config found. Creating from default..."
-    mkdir /config/netdata
+    mkdir -pv /config/netdata/{etc/netdata,var/{log/netdata,lib/netdata/registry}}
     cp /usr/bin/netdata.conf_default $configpath
     bashio::log.info "Netdata configuration: prefix all netdata paths with /config/netdata/"
-    ini-file set -s directories -k config -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k "stock config" -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k log -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k web -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k cache -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k lib -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k lock -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k plugins -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k registry -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k "health config" -v "/config/netdata/var/log/netdata/debug.log" $configpath
-    ini-file set -s directories -k "stock health config" -v "/config/netdata/var/log/netdata/debug.log" $configpath
+    ini-file set -s directories -k config -v "/config/netdata/etc/netdata" $configpath
+    #ini-file set -s directories -k "stock config" -v "/config/netdata/usr/lib/netdata/conf.d" $configpath
+    ini-file set -s directories -k log -v "/config/netdata/var/log/netdata" $configpath
+    #ini-file set -s directories -k web -v "/config/netdata/usr/share/netdata/web" $configpath
+    #ini-file set -s directories -k cache -v "/config/netdata/var/cache/netdata" $configpath
+    ini-file set -s directories -k lib -v "/config/netdata/var/lib/netdata" $configpath
+    #ini-file set -s directories -k lock -v "/config/netdata/var/lib/netdata/lock" $configpath
+    #ini-file set -s directories -k plugins -v '"/config/netdata/usr/libexec/netdata/plugins.d" "/config/netdata/etc/netdata/custom-plugins.d"' $configpath
+    ini-file set -s directories -k registry -v "/config/netdata/var/lib/netdata/registry" $configpath
+    #ini-file set -s directories -k "health config" -v "/config/netdata/usr/lib/netdata/conf.d/health.d" $configpath
+    #ini-file set -s directories -k "stock health config" -v "/config/netdata/etc/netdata/health.d" $configpath
 fi
 
 NETDATA_HOSTNAME=$(bashio::config 'hostname')
