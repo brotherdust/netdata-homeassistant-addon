@@ -4,6 +4,10 @@ If you don't know what the difference to the non-DEV version is, don't use this.
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.2.8-DEV1] - 2023-09-12
+  replace sed with  [ini-file](https://github.com/bitnami/ini-file)
+  use /config/netdata as prefix directories (for now prefix everything, later we will reduce this to only the necessary paths)
+
 ## [2.2.7] - 2023-09-12
 
 - Update [Netdata 1.42.3](https://github.com/netdata/netdata/releases/tag/v1.42.3)
