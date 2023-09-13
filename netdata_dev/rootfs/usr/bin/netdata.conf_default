@@ -1,0 +1,32 @@
+# global netdata configuration
+
+[global]
+	hostname = homeassistant
+
+[db]
+  dbengine page cache size MB = 32
+  dbengine multihost disk space MB = 256
+
+[health]
+  enabled alarms = no
+
+[logs]
+	debug = none
+	error = none
+	collector = none
+	access = none
+	health = none
+
+[directories]
+	config = /config/netdata/etc/netdata
+	stock config = /config/netdata/usr/lib/netdata/conf.d
+	log = /config/netdata/var/log/netdata
+	web = /config/netdata/usr/share/netdata/web
+	cache = /config/netdata/var/cache/netdata
+	lib = /config/netdata/var/lib/netdata
+	home = /root
+	lock = /config/netdata/var/lib/netdata/lock
+	plugins = "/config/netdata/usr/libexec/netdata/plugins.d" "/config/netdata/etc/netdata/custom-plugins.d"
+	registry = /config/netdata/var/lib/netdata/registry
+	health config = /config/netdata/etc/netdata/health.d
+	stock health config = /config/netdata/usr/lib/netdata/conf.d/health.d
