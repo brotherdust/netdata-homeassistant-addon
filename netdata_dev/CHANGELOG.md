@@ -4,6 +4,10 @@ If you don't know what the difference to the non-DEV version is, don't use this.
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.2.8-DEV4] - 2023-09-12
+  !!DEV work only with arm64 for now...!!
+  fix log variable (enable/disable)
+  
 ## [2.2.8-DEV3] - 2023-09-12
   !!DEV work only with arm64 for now...!!
   Fix ini-file download
