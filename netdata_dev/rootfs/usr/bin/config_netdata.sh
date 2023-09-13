@@ -49,14 +49,14 @@ fi
 NETDATA_ENABLE_LOG=$(bashio::config 'enable_log')
 if [[ ${NETDATA_ENABLE_LOG} == "false" ]]
 then
-    bashio::log.info "Netdata configuration: logging is DISABLED (${NETDATA_DISABLE_LOG})"
+    bashio::log.info "Netdata configuration: logging is DISABLED (${NETDATA_ENABLE_LOG})"
     ini-file set -s logs -k debug -v none $configpath
     ini-file set -s logs -k error -v none $configpath
     ini-file set -s logs -k connector -v none $configpath
     ini-file set -s logs -k access -v none $configpath
     ini-file set -s logs -k health -v none $configpath
 else
-    bashio::log.info "Netdata configuration: logging is ENABLED (${NETDATA_DISABLE_LOG})"
+    bashio::log.info "Netdata configuration: logging is ENABLED (${NETDATA_ENABLE_LOG})"
     ini-file set -s logs -k debug -v "/config/netdata/var/log/netdata/debug.log" $configpath
     ini-file set -s logs -k error -v "/config/netdata/var/log/netdata/error.log" $configpath
     ini-file set -s logs -k connector -v "/config/netdata/var/log/netdata/connector.log" $configpath
