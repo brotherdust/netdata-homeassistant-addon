@@ -3,7 +3,7 @@ name: Netdata
 version: "2.2.7"
 slug: netdata
 description: Netdata - Monitor everything in real time
-url: "https://github.com/cryorig/netdata-homeassistant-addon"
+url: "https://github.com/brotherdust/netdata-homeassistant-addon"
 arch:
   - armhf
   - armv7
