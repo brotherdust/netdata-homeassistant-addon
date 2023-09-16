@@ -16,8 +16,11 @@ panel_title: Netdata
 ingress: true
 ingress_port: 19999
 journald: true
+apparmor: unconfined
+docker_api: true
 privileged:
   - SYS_PTRACE
+  - SYS_ADMIN
 map:
   - config:rw
 options:
