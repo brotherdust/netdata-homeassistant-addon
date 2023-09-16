@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Netdata
-url: "https://github.com/cryorig/netdata-homeassistant-addon"
-maintainer: CryoRig <https://github.com/cryorig>
+url: "https://github.com/brotherdust/netdata-homeassistant-addon"
+maintainer: Jarad Olson <https://github.com/brotherdust>
