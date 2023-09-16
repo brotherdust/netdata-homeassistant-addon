@@ -18,6 +18,7 @@ ingress_port: 19999
 journald: true
 privileged:
   - SYS_PTRACE
+  - SYS_ADMIN
 map:
   - config:rw
   - share:rw
